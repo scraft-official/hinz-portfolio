@@ -337,11 +337,11 @@ const gallery = {
     //   alt: "image",
     //   orientation: "horizontal",
     // },
-    // {
-    //   src: "/images/gallery/img-14.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
+    {
+      src: "/images/gallery/img-14.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
   ],
 };
 
