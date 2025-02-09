@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      
+
 jobs:
   build:
     name: Build Portfolio
@@ -22,27 +22,28 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm install
-        
-      - name: Build website
         run: npm run build
+
+      - name: Export static site
+        run: npm run export
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: out 
+
   deploy:
     name: Deploy to GitHub Pages
     needs: build
-    
+
     permissions:
       pages: write
       id-token: write
-      
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
