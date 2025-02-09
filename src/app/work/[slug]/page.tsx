@@ -14,9 +14,9 @@ interface WorkParams {
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = [] getPosts(["src", "app", "work", "projects"]);
+  const posts = [] //getPosts(["src", "app", "work", "projects"]);
   return [];
-  
+
   return posts.map((post) => ({
     slug: post.slug,
   }));
