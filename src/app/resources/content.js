@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Java Developer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   location: "Europe/Warsaw", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Polish", "French"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -60,7 +60,7 @@ const home = {
   headline: <>Java Developer</>,
   subline: (
     <>
-      I am a self-taught Java Developer from Gdansk with an interdisciplinary IT skill set.
+      I am a self-taught <InlineCode>Java Developer</InlineCode> from Gdansk with an interdisciplinary IT skill set.
       <br /><br />
       Currently studing <InlineCode>Computer Science</InlineCode> at the <br/>Polish-Japanese Academy of Information Technology.
     </>

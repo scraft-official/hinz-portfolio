@@ -3,7 +3,7 @@ const baseURL = "www.hinsinger.me";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": false,
+  "/work": true,
   "/blog": false,
   "/gallery": false,
 };
